@@ -30,6 +30,11 @@ const userSchema = new Schema({
                 }
             }
         }
+    },
+    {
+        toJSON: {
+          getters: true,
+        },
     }
 );
 
